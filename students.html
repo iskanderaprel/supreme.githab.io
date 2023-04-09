@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body class="root">
+   <div class="all">
+    <header class="header">
+        <a class="logo" href="index.html"><img src="./img/logotype.svg" alt="Логотип"></a>
+         <nav>
+             <div class="burger">
+                 <div class="burger__menu">
+                     <span class="burger__item"></span>
+                     <span class="burger__item"></span>
+                     <span class="burger__item"></span>
+                 </div>
+             </div>
+             <ul class="menu menu_show">
+                 <li class="menu__list menu_show">
+                     <a class="menu__link" href="index.html">Главная</a></li>
+                 <li class="menu__list menu_show">
+                     <a class="menu__link menu__link_active" href="students.html">Студенты</a></li>
+                 <li class="menu__list menu_show">
+                     <a class="menu__link" href="about_the_course.html">О курсе</a></li>
+                 <li class="menu__list menu_show">
+                     <a class="menu__link" href="contacts.html">Контакты</a></li>
+             </ul>
+         </nav>
+         <button class="button_enter">Войти</button>
+     </header>
+    <main class="content_students">
+       <h2 class="subtitle__students">Студенты потока 08.04.2023 &#128103; &#129489;</h2>
+       <div class="students">
+        <a class="link_to_profile" href="about_me.html">
+            <div class="student">
+                <img class="card_image" src="./img/myphoto.jpg" alt="Фотография студента Александра Гладкова">
+                <p class="student__name">Александр Гладков</p>
+            </div>
+        </a>
+        <div class="student beginner">
+            <img class="card_image" src="./img/student1.jpg" alt="Фотография студента Леонида Максимова">
+            <p class="student__name">Леонид Максимов</p>
+        </div>
+        <div class="student">
+            <img class="card_image" src="./img/student2.jpg" alt="Фотография студента Марка Сахарова">
+            <p class="student__name">Марк Сахаров</p>
+        </div>
+        <div class="student">
+            <img class="card_image" src="./img/student3.jpg" alt="Фотография студентки Натальи Мануйловой">
+            <p class="student__name">Наталья Мануйлова</p>
+        </div>
+        <div class="student">
+            <img class="card_image" src="./img/student4.jpg" alt="Фотография студента Василия Иванова">
+            <p class="student__name">Василий Иванов</p>
+            
+        </div>
+       </div>
+    </main>
+   </div>
+    <footer class="footer">
+        <p>2023 &copy; 
+            <a class="link_footer" href="./index.html">учебный центр</a> 
+         </p> 
+    </footer>
+    <div class="login__popap  visible">
+        <h3 class="title__popap">Войти на сайт</h3>
+        <input class="user-name" type="text" 
+        autofocus placeholder="Логин"
+        required>
+        <input class="user-name" type="password" placeholder = "Пароль" required>
+        <button class="button_enter">Войти</button>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

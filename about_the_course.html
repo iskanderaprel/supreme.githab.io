@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О курсе</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body class="root">
+   <div class="all">
+    <header class="header">
+        <a class="logo" href="index.html"><img src="./img/logotype.svg" alt="Логотип"></a>
+         <nav>
+             <div class="burger">
+                 <div class="burger__menu">
+                     <span class="burger__item"></span>
+                     <span class="burger__item"></span>
+                     <span class="burger__item"></span>
+                 </div>
+             </div>
+             <ul class="menu menu_show">
+                 <li class="menu__list menu_show">
+                     <a class="menu__link" href="index.html">Главная</a></li>
+                 <li class="menu__list menu_show">
+                     <a class="menu__link" href="students.html">Студенты</a></li>
+                 <li class="menu__list menu_show">
+                     <a class="menu__link  menu__link_active" href="about_the_course.html">О курсе</a></li>
+                 <li class="menu__list menu_show">
+                     <a class="menu__link" href="contacts.html">Контакты</a></li>
+             </ul>
+         </nav>
+         <button class="button_enter">Войти</button>
+     </header>
+    <main class="content__about">
+       <div class="block__about">
+        <h2 class="subtitle__about">О курсе &#128241;</h2>
+       <p class="text__style">Посмотрите видео о нас</p>
+       </div>
+    <div class="video-container">
+        <video class="video" width="470" height="255" poster="./img/video1.png" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            <source src="video.webm" type="video/webm">
+            <object data="video.mp4" width="470" height="255">
+            <embed src="video.swf" width="470" height="255">
+            </object>
+        </video>
+    </div>
+    </main>
+   </div>
+    <footer class="footer">
+        <p>2023 &copy; 
+            <a class="link_footer" href="./index.html">учебный центр</a> 
+         </p>   
+    </footer>
+    <div class="login__popap  visible">
+        <h3 class="title__popap">Войти на сайт</h3>
+        <input class="user-name" type="text" 
+        autofocus placeholder="Логин"
+        required>
+        <input class="user-name" type="password" placeholder = "Пароль" required>
+        <button class="button_enter">Войти</button>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
